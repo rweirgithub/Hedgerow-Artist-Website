@@ -1,7 +1,13 @@
+:root {
+    --main-font-fam-1: 'Comfortaa', cursive;
+    --main-font-fam-2: 'Maven Pro', sans-serif;
+    --main-font-fam-3: 'Quicksand', sans-serif;
+}
+
 body {
     box-sizing: border-box;
     color: black;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: var(--main-font-fam-3);
     max-width: 1500px;
     margin: auto;
 }
@@ -20,6 +26,9 @@ h1 {
     display: block;
     margin-left: 50px;
     margin-top: 70px;
+    font-family: var(--main-font-fam-3);
+
+
 }
 
 /* Nav */
