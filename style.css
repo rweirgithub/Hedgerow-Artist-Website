@@ -291,6 +291,9 @@ footer {
     padding: .5em;
 }
 
+i {
+    font-family: 'Open Sans', sans-serif;
+}
 
 .footer-design-link {
     bottom: 0;
