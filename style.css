@@ -176,23 +176,33 @@ header {
     align-items: center;
 }
 
-.item-right {
-    padding-left: 10%;
-}
-
 .item-h2 {
     font-size: 3em;
     text-align: center;
 }
 
+.button-div>a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-text {
+    padding-left: 10%;
+}
+
 @media (max-width: 1000px) {
     .shop-div {
         flex-direction: column;
+        justify-content: center;
     }
 
-    .item-right {
+    .item-text {
         padding-left: 0;
         margin: 2rem auto 2rem auto;
+        flex-direction: column;
+        justify-content: center;
 
     }
 
@@ -203,7 +213,30 @@ header {
         text-align: center;
     }
 
+    .item-img>.button-div {
+        margin-bottom: 50px;
+    }
 
+
+
+}
+
+@media (min-width: 1001px) {
+    #flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #right-img {
+        order: 2;
+        padding-left: 10%;
+    }
+
+    #left-text {
+        order: 1;
+        padding-left: 0;
+
+    }
 }
 
 /* Shop button */
