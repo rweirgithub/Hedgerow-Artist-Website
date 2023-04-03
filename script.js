@@ -1,13 +1,9 @@
-const hamburger = document.getElementById("hamburger")
-const navList = document.getElementById("nav-list")
+$(document).ready(function () {
+    $('button').click(function () {
+        $('.alert').show()
+    });
 
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active")
-    navList.classList.toggle("active")
-})
-
-document.querySelectorAll("nav-link").forEach(n => n.
-    addEventListener("click", () => {
-        hamburger.classList.remove("active");
-        navList.classList.remove("active");
-    }))
+    $('button').click(function () {
+        $(this).parents('div').hide();
+    });
+});

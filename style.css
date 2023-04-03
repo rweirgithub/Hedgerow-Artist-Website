@@ -33,52 +33,16 @@ h1 {
 
 /* Nav */
 
-header {
-    position: fixed;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    z-index: 10;
-}
-
-.nav-subcontainer {
-    width: 100%;
-    display: flex;
-}
-
-.nav-subcontainer img {
-    display: flex;
-    justify-content: space-between;
-    align-content: start;
-    overflow: auto;
-    height: 50px;
-    width: 50px;
-    margin: 0 0;
-}
-
-.logo-img {
-    background-image: url("../img/logo.png");
-
-}
-
-.nav-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    overflow: auto;
-}
-
 .nav-item {
     margin: 0;
     padding: 0 1rem;
     min-width: 50px;
     list-style-type: none;
     font-size: 1.5em;
+}
+
+.navbar {
+    font-family: var(--main-font-fam-3)
 }
 
 
@@ -101,21 +65,9 @@ header {
     background-color: black;
 }
 
-/* Banner */
+/* Carousel */
 
-.banner-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-}
-
-.banner-link {
-    position: absolute;
-    z-index: 5;
-    text-align: center;
-    margin-bottom: 20px;
-}
+.carousel-inner {}
 
 
 /* About section */
@@ -290,6 +242,35 @@ header {
 
 .button-div {
     text-align: center;
+}
+
+/* Contact page */
+
+.contact-outer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    height: 400px;
+    margin: 100px auto;
+    gap: 1rem;
+
+}
+
+.contact-outer-container img {
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 480px;
+    width: 33%;
+    text-align: center;
+}
+
+label {
+    margin-top: 10px;
+}
+
+.alert {
+    display: none;
 }
 
 /* Footer */
