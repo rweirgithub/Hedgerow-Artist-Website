@@ -1,9 +1,7 @@
-$(document).ready(function () {
-    $('button').click(function () {
-        $('.alert').show()
-    });
+const extendedGalleryBtn = document.getElementById('extended-gallery-btn')
+const extendedGallery = document.getElementById('extended-gallery')
 
-    $('button').click(function () {
-        $(this).parents('div').hide();
-    });
-});
+extendedGalleryBtn.addEventListener('click', function () {
+    extendedGallery.style.display = 'contents'
+    extendedGalleryBtn.style.display = 'none'
+})
